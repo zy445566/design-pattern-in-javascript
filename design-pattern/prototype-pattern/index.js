@@ -13,6 +13,15 @@ class Shape {
        this.id = id;
     }
     clone() {
+        /**
+        * 如果子类要改成class形式，这个方法要改写成下面形式
+        * 子类为function，主要是通过原型模式帮助理解JS原型链
+        * return Reflect.construct(
+        * this.__proto__.constructor, 
+        * [], 
+        * this.__proto__.constructor
+        * )
+        */
        let clone = {};
        clone.__proto__ = this.__proto__;
        this.__proto__.constructor.call(clone);
