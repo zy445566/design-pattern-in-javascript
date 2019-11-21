@@ -74,8 +74,9 @@ class FactoryProducer {
  }
 
 // 运行代码
-
+//通过抽象工厂拿形状工厂
 const shapeFactory = FactoryProducer.getFactory('SHAPE');
+// 通过工厂拿各种形状
 const shape1 = shapeFactory.getShape('CIRCLE');
 shape1.draw();
 const shape2 = shapeFactory.getShape('RECTANGLE');
@@ -83,7 +84,9 @@ shape2.draw();
 const shape3 = shapeFactory.getShape('SQUARE');
 shape3.draw();
 
+//通过抽象工厂拿颜色工厂
 const colorFactory = FactoryProducer.getFactory('COLOR');
+// 通过工厂拿各种颜色
 const color1 = colorFactory.getColor('RED');
 color1.fill();
 const color2 = colorFactory.getColor('BLUE');

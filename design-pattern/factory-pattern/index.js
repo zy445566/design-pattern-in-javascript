@@ -28,6 +28,7 @@ class ShapeFactory {
     }
 }
 const shapeFactory = new ShapeFactory();
+// 通过工厂拿各种形状
 const shape1 = shapeFactory.getShape('CIRCLE');
 shape1.draw();
 const shape2 = shapeFactory.getShape('RECTANGLE');

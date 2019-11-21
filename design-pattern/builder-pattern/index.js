@@ -1,23 +1,28 @@
+// 纸盒
 class Wrapper {
     pack() {
         return "Wrapper";
     }
 }
+// 瓶子
 class Bottle {
     pack() {
         return "Bottle";
     }
 }
+// 汉堡需要纸盒包住
 class Burger {
     packing() {
         return new Wrapper();
     }
 }
+// 冷饮需要瓶子装
 class ColdDrink {
     packing() {
         return new Bottle();
     }
 }
+// 蔬菜汉堡
 class VegBurger extends Burger {
     price() {
         return 25.0;
@@ -26,6 +31,7 @@ class VegBurger extends Burger {
         return "Veg Burger";
     }
 }
+// 肌肉汉堡
 class ChickenBurger extends Burger {
     price() {
         return 50.5;
@@ -34,6 +40,7 @@ class ChickenBurger extends Burger {
         return "Chicken Burger";
     }
 }
+// 可乐
 class Coke extends ColdDrink {
     price() {
        return 30.0;
@@ -42,7 +49,7 @@ class Coke extends ColdDrink {
        return "Coke";
     }
 }
-
+// 百事
 class Pepsi extends ColdDrink {
     price() {
        return 35.0;
@@ -79,7 +86,7 @@ class Meal {
     }   
  }
 
- class MealBuilder {
+class MealBuilder {
     prepareVegMeal (){
        const meal = new Meal();
        meal.addItem(new VegBurger());
@@ -92,7 +99,7 @@ class Meal {
        meal.addItem(new Pepsi());
        return meal;
     }
- }
+}
 
 const mealBuilder = new MealBuilder();
 const vegMeal = mealBuilder.prepareVegMeal();
