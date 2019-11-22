@@ -15,7 +15,8 @@ class Shape {
     clone() {
         /**
         * 如果子类要改成class形式，这个方法要改写成下面形式
-        * 子类为function，主要是通过原型模式帮助理解JS原型链
+        * 因为主要是通过JS原型链帮助理解原型模式，所以子类不使用class形式
+        * class和function构造函数的区别是class的构造函数增加了只能作为构造函数使用的校验，比如new
         * return Reflect.construct(
         * this.__proto__.constructor, 
         * [], 
@@ -23,6 +24,8 @@ class Shape {
         * )
         */
        let clone = {};
+       // 注意如果此类被继承，this会变成子类的方法
+       // 同时这里使用的是原型的指针，所以比直接创建对象性能损耗更低
        clone.__proto__ = this.__proto__;
        this.__proto__.constructor.call(clone);
        return clone;
