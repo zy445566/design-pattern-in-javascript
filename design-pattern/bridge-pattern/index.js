@@ -18,6 +18,7 @@ class Shape {
         }
         this.drawAPI = drawAPI;
     }
+    draw() {}
 }
 
 class Circle extends Shape {

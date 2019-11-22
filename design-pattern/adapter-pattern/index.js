@@ -1,20 +1,10 @@
-class AdvancedMediaPlayer {
-    playVlc(fileName){}
-    playMp4(fileName){}
-}
-class VlcPlayer extends AdvancedMediaPlayer {
+class VlcPlayer {
     playVlc(fileName) {
        console.log("Playing vlc file. Name: "+ fileName);      
     }
-    playMp4(fileName) {
-       //do nothing
-    }
 }
 
-class Mp4Player extends AdvancedMediaPlayer  {
-    playVlc(fileName) {
-       //do nothing
-    }
+class Mp4Player  {
     playMp4(fileName) {
         console.log("Playing mp4 file. Name: "+ fileName);      
     }
