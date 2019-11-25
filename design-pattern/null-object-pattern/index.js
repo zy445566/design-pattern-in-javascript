@@ -1,7 +1,12 @@
-class RealCustomer {
-    constructor(name) {
-       this.name = name;    
-    }
+class Customer {
+   constructor(name) {
+      this.name = name;    
+   }
+   getName() {}
+   isNil() {}
+}
+
+class RealCustomer extends Customer {
     getName() {
        return this.name;
     }
@@ -9,7 +14,7 @@ class RealCustomer {
        return false;
     }
 }
-class NullCustomer {
+class NullCustomer extends Customer {
     getName() {
        return "Not Available in Customer Database";
     }
