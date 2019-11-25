@@ -1,16 +1,21 @@
 class Game {
-    initialize(){};
-    startPlay(){};
-    endPlay(){};
+   constructor() {
+      if(this.play!= Game.prototype.play) {
+         throw new Error("play mothed is final,can't be modify!");
+      }
+   }
+   initialize(){};
+   startPlay(){};
+   endPlay(){};
   
-    play(){
+   play(){
        //初始化游戏
        this.initialize();
        //开始游戏
        this.startPlay();
        //结束游戏
        this.endPlay();
-    }
+   }
 }
 
 class Cricket extends Game {
@@ -39,6 +44,6 @@ class Football extends Game {
 
 let game = new Cricket();
 game.play();
-console.log();
+console.log('');
 game = new Football();
 game.play();      
