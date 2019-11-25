@@ -70,8 +70,3 @@ studentBusinessObject.updateStudent(student);
 studentBusinessObject.getStudent(0);
 console.log("Student: [RollNo : "
 +student.getRollNo()+", Name : "+student.getName()+" ]");
-
-/**
- * 这个传输对象模式和数据访问对象模式很相似
- * 区别是数据访问对象模式通过定义接口获取，而传输对象模式通过打包业务对象服务获取
- */
