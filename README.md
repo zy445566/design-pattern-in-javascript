@@ -34,7 +34,7 @@
 * [模板模式](./design-pattern/template-pattern/README.md)
 * [访问者模式](./design-pattern/visitor-pattern/README.md)
 
-# 常在架构设计中使用的模式
+# 常在架构设计中衍生的模式
 * [MVC模式](./design-pattern/mvc-pattern/README.md)
 * [业务代表模式](./design-pattern/business-delegate-pattern/README.md)
 * [组合实体模式](./design-pattern/composite-entity-pattern/README.md)
