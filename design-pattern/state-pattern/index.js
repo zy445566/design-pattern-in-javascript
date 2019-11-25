@@ -1,4 +1,3 @@
-
 class StartState {
     doAction(context) {
        console.log("Player is in start state");
@@ -26,7 +25,7 @@ class Context {
        this.state = state;     
     }
     getState(){
-       return this.state;
+       return this.state.toString();
     }
 }
 
@@ -35,9 +34,9 @@ const context = new Context();
 const startState = new StartState();
 startState.doAction(context);
 
-console.log(context.getState().toString());
+console.log(context.getState());
 
 const stopState = new StopState();
 stopState.doAction(context);
 
-console.log(context.getState().toString());
+console.log(context.getState());
