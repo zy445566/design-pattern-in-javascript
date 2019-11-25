@@ -17,21 +17,12 @@ class Middleman {
     }
 }
 
-class Person {
-    constructor(name, money){
-        if(new.target == Person) {
-            throw new Error('this class must be extends.')
-        }
+// 租客
+class Tenant {
+    constructor(name, money) {
         this.name  = name;
         this.money  = money;
         console.log(`${name} have $${money}`);
-    }
-}
-
-// 租客
-class Tenant extends Person{
-    constructor(name, money) {
-        super(name, money);
     }
     payDeposit(money,middleman) {
         console.log(`${this.name} pay $${money} deposit`);
@@ -44,9 +35,11 @@ class Tenant extends Person{
 }
 
 // 房东
-class Landlord extends Person{
+class Landlord{
     constructor(name, money) {
-        super(name, money)
+        this.name  = name;
+        this.money  = money;
+        console.log(`${name} have $${money}`);
     }
     refundDeposit(money,middleman) {
         console.log(`${this.name} refund $${money} deposit`);
