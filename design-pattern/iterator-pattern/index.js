@@ -1,5 +1,3 @@
-
-
 class NameRepository {
     constructor() {
         this.names = ["Robert" , "John" ,"Julie" , "Lora"];
