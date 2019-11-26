@@ -51,3 +51,7 @@ greenCircle.draw();
 ```
 # 桥接模式的优势
 即使基础组件发生变化，也不影响上层的调用。例子中RedCircle和GreenCircle作为了基础组件，假设方法drawCircle进行了更名或调用方法发生变更，但是在抽象层Shape依旧是draw，只能修改Circle的draw内容来修改，但是对外依然能保持draw方法的调用。
+
+[上一页(适配器模式)](../adapter-pattern/README.md)
+
+[下一页(过滤器模式)](../filter-pattern/README.md)
