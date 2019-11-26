@@ -68,3 +68,7 @@ for(const name of namesRepositoryEs6) {
 ```
 # 迭代器模式的优势
 通过迭代器的方式可以更方便的遍历有规律的数据，或者是通过迭代器来完成一些流式操作。
+
+[上一页(解释器模式)](../interpreter-pattern/README.md)
+
+[下一页(中介者模式)](../mediator-pattern/README.md)

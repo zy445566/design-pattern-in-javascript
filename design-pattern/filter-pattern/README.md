@@ -126,7 +126,34 @@ printPersons(singleMale.meetCriteria(persons));
 
 console.log("\nSingle Or Females: ");
 printPersons(singleOrFemale.meetCriteria(persons));
-
+/**
+ * output:
+ * Males: 
+ * Person { name: 'Robert', gender: 'Male', maritalStatus: 'Single' }
+ * Person { name: 'John', gender: 'Male', maritalStatus: 'Married' }
+ * Person { name: 'Mike', gender: 'Male', maritalStatus: 'Single' }
+ * Person { name: 'Bobby', gender: 'Male', maritalStatus: 'Single' }
+ * 
+ * Females: 
+ * Person { name: 'Laura', gender: 'Female', maritalStatus: 'Married' }
+ * Person { name: 'Diana', gender: 'Female', maritalStatus: 'Single' }
+ * 
+ * Single Males: 
+ * Person { name: 'Robert', gender: 'Male', maritalStatus: 'Single' }
+ * Person { name: 'Mike', gender: 'Male', maritalStatus: 'Single' }
+ * Person { name: 'Bobby', gender: 'Male', maritalStatus: 'Single' }
+ * 
+ * Single Or Females: 
+ * Person { name: 'Robert', gender: 'Male', maritalStatus: 'Single' }
+ * Person { name: 'Diana', gender: 'Female', maritalStatus: 'Single' }
+ * Person { name: 'Mike', gender: 'Male', maritalStatus: 'Single' }
+ * Person { name: 'Bobby', gender: 'Male', maritalStatus: 'Single' }
+ * Person { name: 'Laura', gender: 'Female', maritalStatus: 'Married' }
+ */
 ```
 # 过滤器模式优势
 在需要做类的筛选的时候，通过每次单一功能的筛选，再做聚合能极大的降低筛选功能的复杂性。
+
+[上一页(桥接模式)](../bridge-pattern/README.md)
+
+[下一页(组合模式)](../composite-pattern/README.md)

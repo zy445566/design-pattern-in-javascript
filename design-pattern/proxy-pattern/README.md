@@ -42,6 +42,14 @@ image.display();
 console.log('')
 // 图像不需要从磁盘加载
 image.display();
+/**
+ * output:
+ * not use es6 Proxy:
+ * Loading test_10mb.jpg
+ * Displaying test_10mb.jpg
+ * 
+ * Displaying test_10mb.jpg
+ */
 ```
 当然用最新的ES6也提供了代理的功能，就不细说了，有兴趣可以看以下
 ```js
@@ -72,7 +80,19 @@ imageEs6.display();
 console.log('')
 // 图像不需要从磁盘加载
 imageEs6.display();
+/**
+ * output:
+ * use es6 Proxy:
+ * Loading test_10mb.jpg
+ * Displaying test_10mb.jpg
+ * 
+ * Displaying test_10mb.jpg
+ */
 ```
 
 # 代理模式的优势
 能在不改变原有类的情况下，实现一些功能或者实现拦截和一些前置操作。
+
+[上一页(享元模式)](../flyweight-pattern/README.md)
+
+[下一页(责任链模式)](../chain-of-responsibility-pattern/README.md)

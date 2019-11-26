@@ -108,6 +108,19 @@ const color2 = colorFactory.getColor('BLUE');
 color2.fill();
 const color3 = colorFactory.getColor('GREEN');
 color3.fill();
+/**
+ * output：
+ * I'm a circle
+ * I'm a rectangle
+ * I'm a square
+ * fill red
+ * fill blue
+ * fill green
+ */
 ```
 # 抽象工厂模式的优势
 那么使用抽象工厂模式的好处和工厂模式的好处很相似，给工厂做了一个统一的出入口，也方便了日后对这个工厂的修改。
+
+[上一页(工厂模式)](../factory-pattern/README.md)
+
+[下一页(单例模式)](../singleton-pattern/README.md)

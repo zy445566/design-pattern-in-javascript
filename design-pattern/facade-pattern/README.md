@@ -48,6 +48,16 @@ const shapeMaker = new ShapeMaker();
 shapeMaker.drawCircle();
 shapeMaker.drawRectangle();
 shapeMaker.drawSquare();
+/**
+ * output:
+ * Circle::draw()
+ * Rectangle::draw()
+ * Square::draw()
+ */
 ```
 # 外观模式的优势
 隐藏内部的复杂性，这样能减少一些对内部修改的可能，同时对外暴露单一功能接口，也有利于降低复杂性。
+
+[上一页(装饰器模式)](../decorator-pattern/README.md)
+
+[下一页(享元模式)](../flyweight-pattern/README.md)

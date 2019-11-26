@@ -50,6 +50,39 @@ for(let i=0; i < 20; ++i) {
     circle.setRadius(100);
     circle.draw();
 }
+/**
+ * output:
+ * Creating circle of color : Red
+ * Circle: Draw() [Color : Red, x : 44, y :20, radius :100
+ * Creating circle of color : Green
+ * Circle: Draw() [Color : Green, x : 84, y :4, radius :100
+ * Circle: Draw() [Color : Green, x : 98, y :64, radius :100
+ * Creating circle of color : Blue
+ * Circle: Draw() [Color : Blue, x : 97, y :31, radius :100
+ * Circle: Draw() [Color : Red, x : 37, y :5, radius :100
+ * Creating circle of color : Black
+ * Circle: Draw() [Color : Black, x : 5, y :51, radius :100
+ * Circle: Draw() [Color : Black, x : 49, y :36, radius :100
+ * Circle: Draw() [Color : Blue, x : 27, y :69, radius :100
+ * Circle: Draw() [Color : Red, x : 82, y :99, radius :100
+ * Circle: Draw() [Color : Blue, x : 79, y :1, radius :100
+ * Creating circle of color : White
+ * Circle: Draw() [Color : White, x : 19, y :23, radius :100
+ * Circle: Draw() [Color : White, x : 27, y :36, radius :100
+ * Circle: Draw() [Color : Blue, x : 71, y :90, radius :100
+ * Circle: Draw() [Color : Green, x : 80, y :66, radius :100
+ * Circle: Draw() [Color : Black, x : 94, y :49, radius :100
+ * Circle: Draw() [Color : Red, x : 49, y :90, radius :100
+ * Circle: Draw() [Color : Black, x : 33, y :86, radius :100
+ * Circle: Draw() [Color : Blue, x : 52, y :97, radius :100
+ * Circle: Draw() [Color : White, x : 0, y :42, radius :100
+ * Circle: Draw() [Color : Blue, x : 29, y :42, radius :100
+ */
 ```
 # 享元模式的优势
 在需要大量重复相同实例的时候，可以使用这种方式来降低极大的内存开销。
+
+
+[上一页(外观模式)](../facade-pattern/README.md)
+
+[下一页(代理模式)](../proxy-pattern/README.md)

@@ -25,3 +25,8 @@ class SingleObject {
 }
 const instance = SingleObject.getInstance();
 instance.showMessage();
+
+/**
+ * output:
+ * Hello World!
+ */

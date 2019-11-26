@@ -75,3 +75,7 @@ broker.placeOrders();
 
 # 命令模式优势
 由于命令模式是最终执行，所以中途可以发出很多不同的命令，能解决一些比如预约的问题。就比如上面的例子，股票可以提前下单，但是未必能最终生效。同时可以让代码展现更加直观和参数化。
+
+[上一页(责任链模式)](../chain-of-responsibility-pattern/README.md)
+
+[下一页(解释器模式)](../interpreter-pattern/README.md)

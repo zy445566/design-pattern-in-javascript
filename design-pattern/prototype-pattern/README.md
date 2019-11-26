@@ -98,6 +98,16 @@ console.log("Shape : " + clonedShape2.getType());
 
 const clonedShape3 = ShapeCache.getShape("3");
 console.log("Shape : " + clonedShape3.getType());
+/**
+ * output:
+ * Shape : Circle
+ * Shape : Square
+ * Shape : Rectangle
+ */
 ```
 # 原型模式的优势
 在其它编程中使用原型模式的优势是使用更小的代价来创建对象，通过原型引用的方式而不是开辟新的空间。但JS是个例外，直接new就好了，因为JS创建对象的方式就是原型引用，所以对比其它语言创建大对象的性能，能高出不少。
+
+[上一页(建造者模式)](../builder-pattern/README.md)
+
+[下一页(适配器模式)](../adapter-pattern/README.md)

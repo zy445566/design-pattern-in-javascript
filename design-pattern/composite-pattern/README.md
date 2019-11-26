@@ -65,6 +65,20 @@ for (const subEmployee of employee.getSubordinates()) {
 //打印该组织的所有员工
 console.log(CEO.toString());
 printAllEmployee(CEO) 
+/**
+ * output:
+ * Employee :[ Name : John, dept : CEO, salary :30000 ]
+ * Employee :[ Name : Robert, dept : Head Sales, salary :20000 ]
+ * Employee :[ Name : Richard, dept : Sales, salary :10000 ]
+ * Employee :[ Name : Rob, dept : Sales, salary :10000 ]
+ * Employee :[ Name : Michel, dept : Head Marketing, salary :20000 ]
+ * Employee :[ Name : Laura, dept : Marketing, salary :10000 ]
+ * Employee :[ Name : Bob, dept : Marketing, salary :10000 ]
+ */
 ```
 # 组合模式的优势
 让相互关联的对象产生了结构性，无论是在关系修改或者是关系直观性上，都只需要关心当前下级的关系，那么这样能更好的降低关系和关系之间的复杂度，加强单对象关系结构的可维护性。
+
+[上一页(过滤器模式)](../filter-pattern/README.md)
+
+[下一页(装饰器模式)](../decorator-pattern/README.md)

@@ -52,3 +52,7 @@ console.log(context.getState());
 ```
 # 状态模式的优势
 适合一些需要根据状态而改变的类，或通过此来消除一些if...else语句。
+
+[上一页(观察者模式)](../observer-pattern/README.md)
+
+[下一页(空对象模式)](../null-object-pattern/README.md)

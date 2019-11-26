@@ -60,3 +60,7 @@ game.play();
 ```
 # 模板模式的优势
 只需要关注自己功能的实现，而不需要着眼整个流程。
+
+[上一页(策略模式)](../strategy-pattern/README.md)
+
+[下一页(访问者模式)](../visitor-pattern/README.md)

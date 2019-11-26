@@ -39,3 +39,9 @@ const shapeMaker = new ShapeMaker();
 shapeMaker.drawCircle();
 shapeMaker.drawRectangle();
 shapeMaker.drawSquare();
+/**
+ * output:
+ * Circle::draw()
+ * Rectangle::draw()
+ * Square::draw()
+ */

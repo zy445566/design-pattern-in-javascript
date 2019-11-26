@@ -59,3 +59,10 @@ class MediaAdapter {
  audioPlayer.play("mp4", "alone.mp4");
  audioPlayer.play("vlc", "far far away.vlc");
  audioPlayer.play("avi", "mind me.avi");
+ /**
+  * output:
+  * Playing mp3 file. Name: beyond the horizon.mp3
+  * Playing mp4 file. Name: alone.mp4
+  * Playing vlc file. Name: far far away.vlc
+  * Invalid media. avi format not supported
+  */

@@ -33,6 +33,14 @@ class SingleObject {
 }
 const instance = SingleObject.getInstance();
 instance.showMessage();
+/**
+ * output:
+ * Hello World!
+ */
 ```
 # 单例模式的优势
 对于频繁使用且可重复使用的对象，可以极大来减少内存消耗和没必要的垃圾回收。
+
+[上一页(抽象工厂模式)](../abstract-factory-pattern/README.md)
+
+[下一页(建造者模式)](../builder-pattern/README.md)

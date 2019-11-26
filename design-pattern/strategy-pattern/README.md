@@ -43,3 +43,7 @@ console.log("10 * 5 = " + context.executeStrategy(10, 5));
 ```
 # 策略模式的优势
 策略和策略之间实现解耦，和状态模式类似可以通过此来消除一些if...else语句。
+
+[上一页(空对象模式)](../null-object-pattern/README.md)
+
+[下一页(模板模式)](../template-pattern/README.md)

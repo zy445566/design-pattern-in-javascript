@@ -31,6 +31,14 @@ image.display();
 console.log('')
 // 图像不需要从磁盘加载
 image.display();
+/**
+ * output:
+ * not use es6 Proxy:
+ * Loading test_10mb.jpg
+ * Displaying test_10mb.jpg
+ * 
+ * Displaying test_10mb.jpg
+ */
 
 // 其实上面的代码可以直接用es6代替
 const ProxyImageEs6 = new Proxy(RealImage,{
@@ -60,3 +68,11 @@ imageEs6.display();
 console.log('')
 // 图像不需要从磁盘加载
 imageEs6.display();
+/**
+ * output:
+ * use es6 Proxy:
+ * Loading test_10mb.jpg
+ * Displaying test_10mb.jpg
+ * 
+ * Displaying test_10mb.jpg
+ */

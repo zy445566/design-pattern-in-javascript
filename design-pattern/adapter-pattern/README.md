@@ -69,6 +69,17 @@ const audioPlayer = new AudioPlayer();
  audioPlayer.play("mp4", "alone.mp4");
  audioPlayer.play("vlc", "far far away.vlc");
  audioPlayer.play("avi", "mind me.avi");
+  /**
+  * output:
+  * Playing mp3 file. Name: beyond the horizon.mp3
+  * Playing mp4 file. Name: alone.mp4
+  * Playing vlc file. Name: far far away.vlc
+  * Invalid media. avi format not supported
+  */
 ```
 # 适配器模式的优势
-可以让两个不同接口作为一个适配的接口使用，这样对下层的关心可以减少，
+可以让两个不同接口作为一个适配的接口使用，这样对下层的关心可以减少.
+
+[上一页(原型模式)](../prototype-pattern/README.md)
+
+[下一页(桥接模式)](../bridge-pattern/README.md)

@@ -60,3 +60,8 @@ console.log(customer4.getName());
 ```
 # 空对象模式的优势
 比如在使用某个类时，需要对这个类来做空判断，在不确定后续这个类的方法是否会被调用时，用一个相同类的空对象来返回，这样可以更加无缝对接空值判断。
+
+
+[上一页(状态模式)](../state-pattern/README.md)
+
+[下一页(策略模式)](../strategy-pattern/README.md)

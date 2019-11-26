@@ -93,3 +93,12 @@ const color2 = colorFactory.getColor('BLUE');
 color2.fill();
 const color3 = colorFactory.getColor('GREEN');
 color3.fill();
+/**
+ * output：
+ * I'm a circle
+ * I'm a rectangle
+ * I'm a square
+ * fill red
+ * fill blue
+ * fill green
+ */

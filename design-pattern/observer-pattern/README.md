@@ -75,3 +75,7 @@ subject.setState(10);
 
 # 观察者模式的优势
 对于对象和对象的关系中，可以通过这种方式来降低耦合，同时在代码的使用上也更加直观。
+
+[上一页(备忘录模式)](../memento-pattern/README.md)
+
+[下一页(状态模式)](../state-pattern/README.md)

@@ -63,3 +63,7 @@ console.log("Second saved State: " + originator.getState());
 ```
 # 备忘录模式的优势
 可以说在编程中需要时光倒流的某些事件的一种最佳实践，通过备忘录模式来做类似的事情。
+
+[上一页(中介者模式)](../mediator-pattern/README.md)
+
+[下一页(观察者模式)](../observer-pattern/README.md)

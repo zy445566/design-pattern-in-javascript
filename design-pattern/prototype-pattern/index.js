@@ -88,3 +88,9 @@ console.log("Shape : " + clonedShape2.getType());
 
 const clonedShape3 = ShapeCache.getShape("3");
 console.log("Shape : " + clonedShape3.getType());
+/**
+ * output:
+ * Shape : Circle
+ * Shape : Square
+ * Shape : Rectangle
+ */

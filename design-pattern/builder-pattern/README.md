@@ -126,7 +126,23 @@ const nonVegMeal = mealBuilder.prepareNonVegMeal();
 console.log("\nNon-Veg Meal");
 nonVegMeal.showItems();
 console.log("Total Cost: " +nonVegMeal.getCost());
+/**
+ * output:
+ * Veg Meal
+ * Item : Veg Burger,Packing : Wrapper,Price : 25
+ * Item : Coke,Packing : Bottle,Price : 30
+ * Total Cost: 55
+ * 
+ * Non-Veg Meal
+ * Item : Chicken Burger,Packing : Wrapper,Price : 50.5
+ * Item : Pepsi,Packing : Bottle,Price : 35
+ * Total Cost: 85.5
+ */
 ```
 
 # 建造者模式的优势
 这是一种创建复杂对象的最佳实践。尤其是复杂对象多变的情况下，通过基础组件来组合，在基础组件变更时，多种依赖于基础组件的复杂组件也能方便变更，而不需要更改多种不同的复杂组件。
+
+[上一页(单例模式)](../singleton-pattern/README.md)
+
+[下一页(原型模式)](../prototype-pattern/README.md)

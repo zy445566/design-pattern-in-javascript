@@ -88,3 +88,8 @@ loggerChain.logMessage(AbstractLogger.ERROR,
 
 # 责任链模式的优势
 当前责任人只需要关心自己应该尽什么责任，而不是要关心，自己完成责任后而发什么的其它的什么责任。避免了发送者和多个接受者耦合在一起。
+
+
+[上一页(代理模式)](../proxy-pattern/README.md)
+
+[下一页(命令模式)](../command-pattern/README.md)

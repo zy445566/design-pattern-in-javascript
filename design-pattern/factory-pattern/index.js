@@ -35,3 +35,9 @@ const shape2 = shapeFactory.getShape('RECTANGLE');
 shape2.draw();
 const shape3 = shapeFactory.getShape('SQUARE');
 shape3.draw();
+/**
+ * output:
+ * I'm a circle
+ * I'm a rectangle
+ * I'm a square
+ */

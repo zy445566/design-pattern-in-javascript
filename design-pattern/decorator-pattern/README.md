@@ -44,6 +44,24 @@ redCircle.draw();
 
 console.log("\nRectangle of red border");
 redRectangle.draw();
+/**
+ * output:
+ * Circle with normal border
+ * Shape: Circle
+ * 
+ * Circle of red border
+ * Shape: Circle
+ * Border Color: Red
+ * 
+ * Rectangle of red border
+ * Shape: Rectangle
+ * Border Color: Red
+ */
 ```
 # 装饰器模式的优势
 即使原有对象发生改变，装饰器是种非侵入式功能添加，对原有对象的影响也能降低到最小。同时在JS中更方便的装饰器的实例也在提案中([https://github.com/tc39/proposal-decorators](https://github.com/tc39/proposal-decorators)),本文写于2019年11月。
+
+
+[上一页(组合模式)](../composite-pattern/README.md)
+
+[下一页(外观模式)](../facade-pattern/README.md)

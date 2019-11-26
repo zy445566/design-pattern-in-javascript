@@ -111,3 +111,15 @@ const nonVegMeal = mealBuilder.prepareNonVegMeal();
 console.log("\nNon-Veg Meal");
 nonVegMeal.showItems();
 console.log("Total Cost: " +nonVegMeal.getCost());
+/**
+ * output:
+ * Veg Meal
+ * Item : Veg Burger,Packing : Wrapper,Price : 25
+ * Item : Coke,Packing : Bottle,Price : 30
+ * Total Cost: 55
+ * 
+ * Non-Veg Meal
+ * Item : Chicken Burger,Packing : Wrapper,Price : 50.5
+ * Item : Pepsi,Packing : Bottle,Price : 35
+ * Total Cost: 85.5
+ */

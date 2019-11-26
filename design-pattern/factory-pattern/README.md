@@ -47,6 +47,14 @@ const shape2 = shapeFactory.getShape('RECTANGLE');
 shape2.draw();
 const shape3 = shapeFactory.getShape('SQUARE');
 shape3.draw();
+/**
+ * output:
+ * I'm a circle
+ * I'm a rectangle
+ * I'm a square
+ */
 ```
 # 工厂模式的优势
 那么使用工厂模式的好处也是显而易见的，比如实例的生产比较复杂，或者说生成实例后还需要额外加工，这个时候工厂给了我们一个统一的出入口，也方便了日后对这个实例的修改。比如你要修改工厂产出是一个单例的时候，就不需要在所有的类中修改，而只要在工厂出口修改即可达到目标。
+
+[下一页(抽象工厂模式)](../abstract-factory-pattern/README.md)

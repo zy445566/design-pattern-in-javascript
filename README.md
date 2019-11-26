@@ -34,16 +34,6 @@
 * [模板模式](./design-pattern/template-pattern/README.md)
 * [访问者模式](./design-pattern/visitor-pattern/README.md)
 
-# 常在架构设计中衍生的模式
-* [MVC模式](./design-pattern/mvc-pattern/README.md)
-* [业务代表模式](./design-pattern/business-delegate-pattern/README.md)
-* [组合实体模式](./design-pattern/composite-entity-pattern/README.md)
-* [数据访问对象模式](./design-pattern/data-access-object-pattern/README.md)
-* [前端控制器模式](./design-pattern/front-controller-pattern/README.md)
-* [拦截过滤器模式](./design-pattern/intercepting-filter-pattern/README.md)
-* [服务定位器模式](./design-pattern/service-locator-pattern/README.md)
-* [传输对象模式](./design-pattern/transfer-object-pattern/README.md)
-
 # 设计模式的六大原则
 1. 开闭原则（Open Close Principle）
 2. 里氏代换原则（Liskov Substitution Principle）

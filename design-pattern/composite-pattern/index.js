@@ -53,3 +53,13 @@ for (const subEmployee of employee.getSubordinates()) {
 //打印该组织的所有员工
 console.log(CEO.toString());
 printAllEmployee(CEO) 
+/**
+ * output:
+ * Employee :[ Name : John, dept : CEO, salary :30000 ]
+ * Employee :[ Name : Robert, dept : Head Sales, salary :20000 ]
+ * Employee :[ Name : Richard, dept : Sales, salary :10000 ]
+ * Employee :[ Name : Rob, dept : Sales, salary :10000 ]
+ * Employee :[ Name : Michel, dept : Head Marketing, salary :20000 ]
+ * Employee :[ Name : Laura, dept : Marketing, salary :10000 ]
+ * Employee :[ Name : Bob, dept : Marketing, salary :10000 ]
+ */
