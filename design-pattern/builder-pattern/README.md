@@ -71,9 +71,20 @@ class Pepsi extends ColdDrink {
 ```js
 class Meal {
     constructor () {
-        // Symbol常常在类中来实现私有类
-        this.itemsName = Symbol('items');
-        this[this.itemsName] = [];
+        const items = [];
+        /**
+         * 为什么不用Proxy而使用defineProperty
+         * 因为Proxy虽然实现和defineProperty类似的功能
+         * 但是在这个场景下，语意上是定义属性，而不是需要代理
+         */
+        Reflect.defineProperty(this, 'items', {
+            get:()=>{
+                if(this.__proto__ != Meal.prototype) {
+                    throw new Error('items is private!');
+                }
+                return items;
+            }
+        })
     }
     addItem(item){
         this[this.itemsName].push(item);

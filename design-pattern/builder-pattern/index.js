@@ -61,23 +61,36 @@ class Pepsi extends ColdDrink {
 
 class Meal {
     constructor () {
-        this.itemsName = Symbol('items');
-        this[this.itemsName] = [];
+        const items = [];
+        /**
+         * 为什么不用Proxy而使用defineProperty
+         * 因为Proxy虽然实现和defineProperty类似的功能
+         * 但是在这个场景下，语意上是定义属性，而不是需要代理
+         */
+        Reflect.defineProperty(this, 'items', {
+            get:()=>{
+                if(this.__proto__ != Meal.prototype) {
+                    throw new Error('items is private!');
+                }
+                return items;
+            }
+        })
+        
     }
     addItem(item){
-        this[this.itemsName].push(item);
+        this.items.push(item);
     }
  
     getCost(){
        let cost = 0.0;
-       for (const item of this[this.itemsName]) {
+       for (const item of this.items) {
           cost += item.price();
        }        
        return cost;
     }
  
     showItems(){
-       for (const item of this[this.itemsName]) {
+       for (const item of this.items) {
           const  nameStr = "Item : "+item.name();
           const  packStr = "Packing : "+item.packing().pack();
           const  priceStr = "Price : "+item.price();
@@ -85,7 +98,6 @@ class Meal {
        }        
     }   
  }
-
 class MealBuilder {
     prepareVegMeal (){
        const meal = new Meal();
