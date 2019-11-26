@@ -47,6 +47,13 @@ class ComputerPartDisplayVisitor{
 ```js
 const computer = new Computer();
 computer.accept(new ComputerPartDisplayVisitor());
+/**
+ * output:
+ * Displaying Mouse.
+ * Displaying Keyboard.
+ * Displaying Monitor.
+ * Displaying Computer.
+ */
 ```
 # 访问者模式的优势
 如上类似设备这个东西是一个相对稳定的结构，而访问者要实现的功能又是非常不确定的，那么针对不同访问者，都可以对相同的设备进行不同的输出。其次只需要暴露特定接口，而相对稳定的设备不需要考虑接口中实现的内容。

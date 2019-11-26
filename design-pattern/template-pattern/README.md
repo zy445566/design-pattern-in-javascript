@@ -56,7 +56,17 @@ let game = new Cricket();
 game.play();
 console.log('');
 game = new Football();
-game.play();      
+game.play();    
+/**
+ * output:
+ * Cricket Game Initialized! Start playing.
+ * Cricket Game Started. Enjoy the game!
+ * Cricket Game Finished!
+ * 
+ * Football Game Initialized! Start playing.
+ * Football Game Started. Enjoy the game!
+ * Football Game Finished!
+ */  
 ```
 # 模板模式的优势
 只需要关注自己功能的实现，而不需要着眼整个流程。

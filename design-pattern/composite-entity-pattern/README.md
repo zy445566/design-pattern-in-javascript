@@ -76,6 +76,13 @@ client.setData("Test", "Data");
 client.printData();
 client.setData("Second Test", "Data1");
 client.printData();
+/**
+ * output:
+ * Data: Test
+ * Data: Data
+ * Data: Second Test
+ * Data: Data1
+ */
 ```
 # 组合实体模式的优势
 对外只需要关心组合实体后暴露的功能，而不需要关心组合之前的实体。

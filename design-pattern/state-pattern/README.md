@@ -49,6 +49,13 @@ const stopState = new StopState();
 stopState.doAction(context);
 
 console.log(context.getState());
+/**
+ * output:
+ * Player is in start state
+ * Start State
+ * Player is in stop state
+ * Stop State
+ */
 ```
 # 状态模式的优势
 适合一些需要根据状态而改变的类，或通过此来消除一些if...else语句。

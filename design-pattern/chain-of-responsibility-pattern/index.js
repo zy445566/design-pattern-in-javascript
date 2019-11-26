@@ -71,3 +71,14 @@ loggerChain.logMessage(AbstractLogger.DEBUG,
 console.log('')
 loggerChain.logMessage(AbstractLogger.ERROR,
     "This is an error information.");
+/**
+ * output:
+ * Standard Console::Logger: This is an information.
+ * 
+ * File Console::Logger: This is a debug level information.
+ * Standard Console::Logger: This is a debug level information.
+ * 
+ * Error Console::Logger: This is an error information.
+ * File Console::Logger: This is an error information.
+ * Standard Console::Logger: This is an error information.
+ */

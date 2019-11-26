@@ -40,3 +40,10 @@ const stopState = new StopState();
 stopState.doAction(context);
 
 console.log(context.getState());
+/**
+ * output:
+ * Player is in start state
+ * Start State
+ * Player is in stop state
+ * Stop State
+ */

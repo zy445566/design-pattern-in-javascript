@@ -34,3 +34,10 @@ class ComputerPartDisplayVisitor{
 
 const computer = new Computer();
 computer.accept(new ComputerPartDisplayVisitor());
+/**
+ * output:
+ * Displaying Mouse.
+ * Displaying Keyboard.
+ * Displaying Monitor.
+ * Displaying Computer.
+ */

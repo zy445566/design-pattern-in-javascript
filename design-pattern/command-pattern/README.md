@@ -71,6 +71,14 @@ broker.takeOrder(sellStockOrder);
 broker.takeOrder(sellStockOrder);
 
 broker.placeOrders();
+/** 
+ * output:
+ * Stock [ Name: ABC,Quantity: 10 ] bought
+ * Stock [ Name: ABC,Quantity: 10 ] bought
+ * Stock [ Name: ABC,Quantity: 10 ] bought
+ * Stock [ Name: ABC,Quantity: 10 ] sold
+ * Stock [ Name: ABC,Quantity: 10 ] sold
+ */
 ```
 
 # 命令模式优势

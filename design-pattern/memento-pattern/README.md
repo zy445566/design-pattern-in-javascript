@@ -60,6 +60,12 @@ originator.getStateFromMemento(careTaker.get(0));
 console.log("First saved State: " + originator.getState());
 originator.getStateFromMemento(careTaker.get(1));
 console.log("Second saved State: " + originator.getState());
+/**
+ * output:
+ * Current State: State #4
+ * First saved State: State #2
+ * Second saved State: State #3
+ */
 ```
 # 备忘录模式的优势
 可以说在编程中需要时光倒流的某些事件的一种最佳实践，通过备忘录模式来做类似的事情。

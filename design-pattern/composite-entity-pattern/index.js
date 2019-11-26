@@ -62,3 +62,10 @@ client.setData("Test", "Data");
 client.printData();
 client.setData("Second Test", "Data1");
 client.printData();
+/**
+ * output:
+ * Data: Test
+ * Data: Data
+ * Data: Second Test
+ * Data: Data1
+ */

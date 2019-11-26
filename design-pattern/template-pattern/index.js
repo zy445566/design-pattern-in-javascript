@@ -46,4 +46,14 @@ let game = new Cricket();
 game.play();
 console.log('');
 game = new Football();
-game.play();      
+game.play();
+/**
+ * output:
+ * Cricket Game Initialized! Start playing.
+ * Cricket Game Started. Enjoy the game!
+ * Cricket Game Finished!
+ * 
+ * Football Game Initialized! Start playing.
+ * Football Game Started. Enjoy the game!
+ * Football Game Finished!
+ */

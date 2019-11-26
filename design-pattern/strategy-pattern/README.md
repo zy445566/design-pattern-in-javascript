@@ -40,6 +40,12 @@ console.log("10 - 5 = " + context.executeStrategy(10, 5));
 
 context = new Context(new OperationMultiply());    
 console.log("10 * 5 = " + context.executeStrategy(10, 5));
+/**
+ * output:
+ * 10 + 5 = 15
+ * 10 - 5 = 5
+ * 10 * 5 = 50
+ */
 ```
 # 策略模式的优势
 策略和策略之间实现解耦，和状态模式类似可以通过此来消除一些if...else语句。

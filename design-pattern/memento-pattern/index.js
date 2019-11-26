@@ -48,3 +48,9 @@ originator.getStateFromMemento(careTaker.get(0));
 console.log("First saved State: " + originator.getState());
 originator.getStateFromMemento(careTaker.get(1));
 console.log("Second saved State: " + originator.getState());
+/**
+ * output:
+ * Current State: State #4
+ * First saved State: State #2
+ * Second saved State: State #3
+ */

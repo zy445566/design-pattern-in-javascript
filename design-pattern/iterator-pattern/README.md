@@ -39,6 +39,14 @@ for(const iter = namesRepository.getIterator(); iter.hasNext();){
     const name = iter.next();
     console.log("Name : " + name);
 }
+/**
+ * output:
+ * ES5 Iterator:
+ * Name : Robert
+ * Name : John
+ * Name : Julie
+ * Name : Lora
+ */
 ```
 当然还有ES6的写法,其实很类似，就不详细说了。
 ```js
@@ -65,6 +73,14 @@ const namesRepositoryEs6 = new NameRepositoryEs6()
 for(const name of namesRepositoryEs6) {
     console.log("Name : " + name);
 }
+/**
+ * output:
+ * ES6 Iterator:
+ * Name : Robert
+ * Name : John
+ * Name : Julie
+ * Name : Lora
+ */
 ```
 # 迭代器模式的优势
 通过迭代器的方式可以更方便的遍历有规律的数据，或者是通过迭代器来完成一些流式操作。

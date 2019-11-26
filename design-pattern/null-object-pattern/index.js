@@ -45,3 +45,11 @@ console.log(customer1.getName());
 console.log(customer2.getName());
 console.log(customer3.getName());
 console.log(customer4.getName());
+/**
+ * output:
+ * Customers
+ * Rob
+ * Not Available in Customer Database
+ * Julie
+ * Not Available in Customer Database
+ */

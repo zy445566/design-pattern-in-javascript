@@ -55,3 +55,18 @@ tenant.payRent(100, middleman);
 tenant.payRent(100, middleman);
 tenant.payRent(100, middleman);
 landlord.refundDeposit(200, middleman);
+/**
+ * output:
+ * Jack have $1000
+ * Zero have $0
+ * Jack pay $300 deposit
+ * Now: Jack have $700,Zero have $300
+ * Jack pay $100 for rent
+ * Now: Jack have $600,Zero have $400
+ * Jack pay $100 for rent
+ * Now: Jack have $500,Zero have $500
+ * Jack pay $100 for rent
+ * Now: Jack have $400,Zero have $600
+ * Zero refund $200 deposit
+ * Now: Jack have $600,Zero have $400
+ */

@@ -38,3 +38,8 @@ const greenCircle = new Circle(100,100, 10, new GreenCircle());
 
 redCircle.draw();
 greenCircle.draw();
+/**
+ * output:
+ * Drawing Circle[ color: red, radius: 10, x: 100, 100]
+ * Drawing Circle[ color: green, radius: 10, x: 100, 100]
+ */

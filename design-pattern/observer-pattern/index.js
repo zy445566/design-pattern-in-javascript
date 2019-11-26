@@ -61,3 +61,14 @@ console.log("First state change: 15");
 subject.setState(15);
 console.log("Second state change: 10");  
 subject.setState(10);
+/**
+ * output:
+ * First state change: 15
+ * Hex String: f
+ * Octal String: 17
+ * Binary String: 1111
+ * Second state change: 10
+ * Hex String: a
+ * Octal String: 12
+ * Binary String: 1010
+ */

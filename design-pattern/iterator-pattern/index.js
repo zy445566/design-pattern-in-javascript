@@ -32,6 +32,14 @@ for(const iter = namesRepository.getIterator(); iter.hasNext();){
     const name = iter.next();
     console.log("Name : " + name);
 }
+/**
+ * output:
+ * ES5 Iterator:
+ * Name : Robert
+ * Name : John
+ * Name : Julie
+ * Name : Lora
+ */
 
 // 而在es6中可以这样使用
 class NameRepositoryEs6 {
@@ -56,3 +64,11 @@ const namesRepositoryEs6 = new NameRepositoryEs6()
 for(const name of namesRepositoryEs6) {
     console.log("Name : " + name);
 }
+/**
+ * output:
+ * ES6 Iterator:
+ * Name : Robert
+ * Name : John
+ * Name : Julie
+ * Name : Lora
+ */

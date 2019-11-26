@@ -63,6 +63,11 @@ const isMarriedWoman = getMarriedWomanExpression();
 console.log("John is male? " + isMale.interpret("John"));
 console.log("Julie is a married women? " 
 + isMarriedWoman.interpret("Married Julie"));
+/**
+ * output:
+ * John is male? true
+ * Julie is a married women? true
+ */
 ```
 
 # 解释器模式的优势
