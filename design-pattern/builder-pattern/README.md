@@ -84,22 +84,22 @@ class Meal {
                 }
                 return items;
             }
-        })
+        }) 
     }
     addItem(item){
-        this[this.itemsName].push(item);
+        this.items.push(item);
     }
  
     getCost(){
        let cost = 0.0;
-       for (const item of this[this.itemsName]) {
+       for (const item of this.items) {
           cost += item.price();
        }        
        return cost;
     }
  
     showItems(){
-       for (const item of this[this.itemsName]) {
+       for (const item of this.items) {
           const  nameStr = "Item : "+item.name();
           const  packStr = "Packing : "+item.packing().pack();
           const  priceStr = "Price : "+item.price();
@@ -112,16 +112,16 @@ class Meal {
 ```js
 class MealBuilder {
     prepareVegMeal (){
-        const meal = new Meal();
-        meal.addItem(new VegBurger());
-        meal.addItem(new Coke());
-        return meal;
+       const meal = new Meal();
+       meal.addItem(new VegBurger());
+       meal.addItem(new Coke());
+       return meal;
     }
     prepareNonVegMeal (){
         const meal = new Meal();
-        meal.addItem(new ChickenBurger());
-        meal.addItem(new Pepsi());
-        return meal;
+       meal.addItem(new ChickenBurger());
+       meal.addItem(new Pepsi());
+       return meal;
     }
 }
 ```
